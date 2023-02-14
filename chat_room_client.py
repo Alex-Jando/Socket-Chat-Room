@@ -1,9 +1,10 @@
 import socket
 import threading
+import sys
 
-HOST = "127.0.0.1"
+HOST = sys.argv[1]
 
-PORT = 5551
+PORT = int(sys.argv[2])
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
